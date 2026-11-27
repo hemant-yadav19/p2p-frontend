@@ -1,0 +1,295 @@
+
+.schedulePage {
+    min-height: 100vh;
+    padding: 30px;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+.scheduleHeader {
+    margin-bottom: 28px;
+}
+
+.scheduleHeader h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.scheduleHeader p,
+.scheduleSubheading {
+    color: #718096;
+    font-size: 14px;
+}
+
+.scheduleContent {
+    display: grid;
+    grid-template-columns: minmax(300px, 0.9fr) minmax(350px, 1.1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.scheduleFormCard,
+.sessionsListSection {
+    background: white;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 3px 15px rgba(20, 40, 80, 0.06);
+}
+
+.scheduleFormCard h2,
+.sessionsListSection h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.scheduleFormCard form {
+    margin-top: 24px;
+}
+
+.scheduleField {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.scheduleField label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #344054;
+}
+
+.scheduleField input,
+.scheduleField select,
+.scheduleField textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dce2eb;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+    color: #172033;
+    font-family: inherit;
+}
+
+.scheduleField input:focus,
+.scheduleField select:focus,
+.scheduleField textarea:focus {
+    border-color: #4263eb;
+    box-shadow: 0 0 0 3px rgba(66, 99, 235, 0.1);
+}
+
+.scheduleField select:disabled {
+    background: #f1f3f7;
+    cursor: not-allowed;
+}
+
+.scheduleField textarea {
+    resize: vertical;
+}
+
+.scheduleTwoColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.scheduleSubmitBtn {
+    width: 100%;
+    padding: 13px;
+    background: #3157d5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.scheduleSubmitBtn:hover {
+    background: #2445b5;
+}
+
+.scheduleSubmitBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.scheduleHint {
+    margin-top: 12px;
+    color: #b7791f;
+    font-size: 13px;
+}
+
+.scheduleMessage {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.successMessage {
+    color: #18794e;
+    background: #e8f7ef;
+}
+
+.errorMessage {
+    color: #c0392b;
+    background: #fff0ee;
+}
+
+.sessionCards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.sessionCard {
+    border: 1px solid #e6eaf0;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.sessionCardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.sessionCardTop h3 {
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+
+.sessionCardTop p {
+    color: #718096;
+    font-size: 13px;
+}
+
+.sessionStatus {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.sessionStatus.pending {
+    color: #a15c00;
+    background: #fff3d6;
+}
+
+.sessionStatus.accepted {
+    color: #18794e;
+    background: #e4f7ed;
+}
+
+.sessionStatus.rejected,
+.sessionStatus.cancelled {
+    color: #b42318;
+    background: #feeceb;
+}
+
+.sessionStatus.completed {
+    color: #3157d5;
+    background: #e9efff;
+}
+
+.sessionDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 13px;
+    color: #596579;
+}
+
+.sessionDetails strong {
+    color: #273449;
+}
+
+.sessionActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.sessionActions button,
+.cancelSessionBtn {
+    border: none;
+    border-radius: 7px;
+    padding: 9px 16px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.acceptSessionBtn {
+    color: white;
+    background: #168653;
+}
+
+.rejectSessionBtn {
+    color: #bd3535;
+    background: #fff0ef;
+}
+
+.cancelSessionBtn {
+    margin-top: 12px;
+    color: #bd3535;
+    background: #fff0ef;
+}
+
+.emptySessions {
+    margin-top: 24px;
+    padding: 35px 15px;
+    text-align: center;
+    background: #f8faff;
+    border-radius: 10px;
+}
+
+.emptySessions h3 {
+    margin-bottom: 8px;
+}
+
+.emptySessions p {
+    font-size: 13px;
+    color: #718096;
+}
+
+.scheduleLoading {
+    padding: 50px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .scheduleContent {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .schedulePage {
+        padding: 16px;
+    }
+
+    .scheduleFormCard,
+    .sessionsListSection {
+        padding: 17px;
+    }
+
+    .scheduleTwoColumns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .scheduleHeader h1 {
+        font-size: 23px;
+    }
+}

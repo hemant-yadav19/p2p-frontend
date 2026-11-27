@@ -1,0 +1,388 @@
+/* .profilePicture img{
+    height: 4rem;
+    width: 4rem;
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profilePage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background: #f5f7fb;
+  color: #202b46;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+.profileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profileHeader h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.profileHeader p {
+  color: #8992a7;
+  font-size: 14px;
+}
+
+.editProfileBtn {
+  background: #3157d5;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Main Profile Card */
+
+.profileMainCard {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+  margin-bottom: 25px;
+}
+
+.profileCover {
+  height: 150px;
+  background: linear-gradient(120deg, #243b80, #5277df);
+}
+
+.profileMainContent {
+  padding: 0 30px 25px;
+}
+
+.profileAvatar {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  margin-top: -58px;
+  background: #e8ecf8;
+}
+
+.profileAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileBasicInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.profileBasicInfo h2 {
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+
+.profileBasicInfo p {
+  color: #8a93a7;
+  font-size: 14px;
+}
+
+.accountBadge {
+  background: #e9efff;
+  color: #3157d5;
+  padding: 7px 17px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+/* Stats */
+
+.profileStats {
+  display: flex;
+  gap: 65px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #edf0f5;
+}
+
+.profileStat h3 {
+  font-size: 20px;
+  color: #3157d5;
+  margin-bottom: 6px;
+}
+
+.profileStat p {
+  font-size: 13px;
+  color: #8992a7;
+}
+
+/* Common Card */
+
+.cardSection {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.035);
+}
+
+.cardSection h2 {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.sectionHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.sectionHeading p {
+  color: #8992a7;
+  font-size: 13px;
+  margin-top: -10px;
+}
+
+/* Completion */
+
+.completionNumber {
+  color: #3157d5;
+  font-size: 23px !important;
+}
+
+.progressBar {
+  width: 100%;
+  height: 9px;
+  background: #e9edf5;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 15px 0 10px;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #3157d5, #7593f5);
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.completionText {
+  font-size: 12px;
+  color: #8992a7;
+}
+
+/* Details Grid */
+
+.profileDetailsGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 22px;
+}
+
+.profileDetailsGrid .cardSection {
+  margin-bottom: 22px;
+}
+
+.personalInfo h2,
+.bioSection h2 {
+  margin-bottom: 22px;
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f1f5;
+}
+
+.infoItem:last-child {
+  border-bottom: none;
+}
+
+.infoItem span,
+.preferenceItem span {
+  color: #8992a7;
+  font-size: 13px;
+}
+
+.infoItem strong {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.verified {
+  color: #16a36a;
+}
+
+.notVerified {
+  color: #e39a36;
+}
+
+.bioSection p {
+  color: #788198;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* Availability */
+
+.availabilityList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.availabilityItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid #edf0f6;
+  border-radius: 9px;
+  background: #fafbfe;
+}
+
+.availabilityDay {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.availableTime {
+  color: #159b67;
+  background: #e8f8f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+.unavailableTime {
+  color: #a0a6b4;
+  font-size: 11px;
+}
+
+/* Preferences */
+
+.preferenceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.preferenceItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #f7f8fc;
+  padding: 18px;
+  border-radius: 9px;
+}
+
+.preferenceItem strong {
+  font-size: 14px;
+}
+
+/* Loading */
+
+.profileLoading {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3157d5;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .profileDetailsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .profilePage {
+    padding: 15px;
+  }
+
+  .profileHeader {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .profileHeader h1 {
+    font-size: 22px;
+  }
+
+  .editProfileBtn {
+    padding: 10px 13px;
+    white-space: nowrap;
+  }
+
+  .profileCover {
+    height: 110px;
+  }
+
+  .profileMainContent {
+    padding: 0 17px 20px;
+  }
+
+  .profileAvatar {
+    width: 90px;
+    height: 90px;
+    margin-top: -45px;
+  }
+
+  .profileBasicInfo h2 {
+    font-size: 19px;
+  }
+
+  .profileStats {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .profileStat h3 {
+    font-size: 17px;
+  }
+
+  .profileStat p {
+    font-size: 11px;
+  }
+
+  .cardSection {
+    padding: 18px;
+  }
+
+  .availabilityList {
+    grid-template-columns: 1fr;
+  }
+
+  .preferenceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .infoItem {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.addSkillContainer {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: #f4f7fc;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main Heading */
+.mainHeading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #172554;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+.mainHeading::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 4px;
+    background: #2563eb;
+    border-radius: 10px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Main Card */
+.addSkillMainContainer {
+    width: 100%;
+    max-width: 480px;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5eaf3;
+}
+
+/* Input and Select */
+.addSkillMainContainer input,
+.addSkillMainContainer select {
+    width: 100%;
+    height: 52px;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: #1e293b;
+    background: #f8fafc;
+    border: 1.5px solid #dbe3ef;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.addSkillMainContainer input::placeholder {
+    color: #94a3b8;
+}
+
+.addSkillMainContainer input:focus,
+.addSkillMainContainer select:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* Select Dropdown */
+.addSkillMainContainer select {
+    cursor: pointer;
+    appearance: auto;
+}
+
+/* Button */
+.addSkillMainContainer button {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.addSkillMainContainer button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(37, 99, 235, 0.25);
+}
+
+.addSkillMainContainer button:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .addSkillContainer {
+        padding: 1.5rem;
+    }
+
+    .mainHeading {
+        font-size: 2rem;
+    }
+
+    .addSkillMainContainer {
+        padding: 2rem 1.5rem;
+    }
+}

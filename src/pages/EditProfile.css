@@ -1,0 +1,342 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.editProfilePage {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f7fb;
+  padding: 30px;
+  color: #202b46;
+  font-family: Arial, sans-serif;
+}
+
+.editProfileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.editProfileHeader h1 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.editProfileHeader p,
+.editDescription {
+  color: #8992a7;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.backBtn {
+  padding: 11px 18px;
+  border: 1px solid #dfe4ef;
+  border-radius: 8px;
+  background: white;
+  color: #3157d5;
+  cursor: pointer;
+}
+
+.editCard {
+  background: white;
+  padding: 27px;
+  border-radius: 12px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.035);
+}
+
+.editCard h2 {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.imageUploadArea {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.imagePreview {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e9edfa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3157d5;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.imagePreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uploadBtn {
+  display: inline-block;
+  padding: 11px 18px;
+  background: #3157d5;
+  color: white;
+  border-radius: 7px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.uploadContent p {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #929bad;
+}
+
+.editFormGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.editInputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.editInputGroup label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #46516b;
+}
+
+.editInputGroup input,
+.editInputGroup select,
+.editInputGroup textarea {
+  width: 100%;
+  border: 1px solid #e1e5ed;
+  outline: none;
+  padding: 13px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  color: #29344c;
+  background: white;
+  font-family: inherit;
+  transition: 0.2s;
+}
+
+.editInputGroup input:focus,
+.editInputGroup select:focus,
+.editInputGroup textarea:focus {
+  border-color: #3157d5;
+  box-shadow: 0 0 0 3px rgba(49, 87, 213, 0.08);
+}
+
+.bioInput {
+  margin-top: 23px;
+}
+
+.editInputGroup textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.bioInput small {
+  text-align: right;
+  color: #929bad;
+  font-size: 11px;
+}
+
+.onlinePreference {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  background: #f7f8fc;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.onlinePreference strong {
+  font-size: 14px;
+}
+
+.onlinePreference p {
+  color: #8992a7;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.onlinePreference input,
+.dayCheckbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: #3157d5;
+  cursor: pointer;
+}
+
+.preferenceHint {
+  margin-top: 10px;
+}
+
+.availabilityForm {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.availabilityFormRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  border: 1px solid #edf0f5;
+  border-radius: 9px;
+  background: #fafbfe;
+}
+
+.availabilityFormRow.activeDay {
+  border-color: #d5defa;
+  background: #f5f7ff;
+}
+
+.dayCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 130px;
+  cursor: pointer;
+}
+
+.dayCheckbox span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.timeInputs {
+  display: flex;
+  gap: 15px;
+}
+
+.timeInputs div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeInputs label {
+  font-size: 12px;
+  color: #8992a7;
+}
+
+.timeInputs input {
+  padding: 8px;
+  border: 1px solid #dfe4ef;
+  border-radius: 6px;
+  outline: none;
+  color: #46516b;
+  font-size: 12px;
+}
+
+.dayUnavailable {
+  color: #a0a6b4;
+  font-size: 12px;
+}
+
+.editMessage {
+  padding: 13px 16px;
+  margin-bottom: 20px;
+  background: #edf7f1;
+  color: #168653;
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+.editFormActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 13px;
+  padding-bottom: 30px;
+}
+
+.cancelEditBtn,
+.saveProfileBtn {
+  padding: 13px 25px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.cancelEditBtn {
+  border: 1px solid #dfe4ef;
+  background: white;
+  color: #657089;
+}
+
+.saveProfileBtn {
+  border: none;
+  background: #3157d5;
+  color: white;
+  font-weight: 600;
+}
+
+.saveProfileBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.editLoading {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  color: #3157d5;
+}
+
+@media(max-width: 650px) {
+  .editProfilePage {
+    padding: 15px;
+  }
+
+  .editProfileHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .editFormGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .editCard {
+    padding: 18px;
+  }
+
+  .availabilityFormRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .timeInputs {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .imageUploadArea {
+    align-items: flex-start;
+  }
+
+  .editFormActions button {
+    flex: 1;
+    padding: 12px 10px;
+  }
+}

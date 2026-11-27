@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contanerUserSkills {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: #f4f7fc;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main Form Card */
+.mainContainerUserSkills {
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 2.8rem;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e5eaf3;
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+    position: relative;
+    overflow: visible;
+}
+
+/* Heading using pseudo element */
+.mainContainerUserSkills::before {
+    content: "Complete Your Skill Profile";
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #172554;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Inputs and Dropdowns */
+.mainContainerUserSkills select,
+.mainContainerUserSkills input,
+.mainContainerUserSkills textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #1e293b;
+    background: #f8fafc;
+    border: 1.5px solid #dbe3ef;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Select */
+.mainContainerUserSkills select {
+    height: 52px;
+    cursor: pointer;
+}
+
+/* Input */
+.mainContainerUserSkills input {
+    height: 52px;
+}
+
+.mainContainerUserSkills input::placeholder,
+.mainContainerUserSkills textarea::placeholder {
+    color: #94a3b8;
+}
+
+/* Textarea */
+.mainContainerUserSkills textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+/* Focus Effect */
+.mainContainerUserSkills select:focus,
+.mainContainerUserSkills input:focus,
+.mainContainerUserSkills textarea:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* Submit Button */
+.mainContainerUserSkills button {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.3rem;
+}
+
+.mainContainerUserSkills button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(37, 99, 235, 0.25);
+}
+
+.mainContainerUserSkills button:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contanerUserSkills {
+        padding: 1rem;
+    }
+
+    .mainContainerUserSkills {
+        padding: 2rem 1.4rem;
+    }
+
+    .mainContainerUserSkills::before {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Skill Input Wrapper */
+.skillInputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Suggestion Dropdown */
+.skillInputWrapper .suggestionList {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    z-index: 9999;
+    max-height: 180px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Suggestion Items */
+.skillInputWrapper .suggestionItem {
+    padding: 12px;
+    cursor: pointer;
+    color: #333;
+}
+
+.skillInputWrapper .suggestionItem:hover {
+    background: #f0f0f0;
+}
+
+.skillInputWrapper .suggestionItem small {
+    color: #888;
+}

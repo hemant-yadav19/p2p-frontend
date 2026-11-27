@@ -1,0 +1,38 @@
+.Container{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer{
+
+    height: 55%;
+    width: 65%;
+    background-color: rgb(246, 242, 242);
+    box-shadow: 1rem 1rem 20px rgba(128, 128, 128, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mainContainer input{
+    height: 2rem;
+    width: 20rem;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid silver;
+    text-align: center;
+}
+
+.mainContainer button{
+    height: 2rem;
+    width: 6rem;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 111);
+    color: white;
+    cursor: pointer;
+}
